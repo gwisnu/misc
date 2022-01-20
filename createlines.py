@@ -156,3 +156,7 @@ def spatialize_PTR(df_ptr):
 
   #move files to output folder
   !mv coal* ./output
+
+def get_sheetnames_xlsx(filepath):
+  wb = load_workbook(filepath, read_only=True, keep_links=False)
+  return wb.sheetnames
