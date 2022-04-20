@@ -1,3 +1,5 @@
+import pandas as pd
+
 def ptr2point(excel,area):
 
   if area == 'paringin':
