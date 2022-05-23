@@ -109,7 +109,6 @@ def spatialize_OB(df_ob):
 
   #create output folder and move files
   import os
-  !mkdir ./output
   !mv ob* ./output
 
 def spatialize_PTR(df_ptr):
