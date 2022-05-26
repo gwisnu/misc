@@ -109,7 +109,7 @@ def spatialize_OB(df_ob):
 
   #create output folder and move files
   import os
-  !mv ob* ./output
+  #!mv ob* ./output
 
 def spatialize_PTR(df_ptr):
   last_update = df_ptr['date'].max().strftime('%y%m%d')
@@ -154,7 +154,7 @@ def spatialize_PTR(df_ptr):
   df_ptr.to_csv('coal_loading_'+last_update+'.csv', index=True, index_label='id')
 
   #move files to output folder
-  !mv coal* ./output
+  #!mv coal* ./output
 
 def get_sheetnames_xlsx(filepath):
   wb = load_workbook(filepath, read_only=True, keep_links=False)
